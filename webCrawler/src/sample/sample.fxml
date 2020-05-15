@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="250.0" prefWidth="483.0">
+         <children>
+            <AnchorPane fx:id="anchorPane" layoutX="12.0" layoutY="16.0" prefHeight="227.0" prefWidth="198.0">
+               <children>
+                  <JFXButton fx:id="startButton" buttonType="RAISED" layoutX="87.0" layoutY="78.0" onAction="#onStartClicked" prefHeight="25.0" prefWidth="88.0" ripplerFill="#6ff29d" style="-fx-background-color: #50AB72;" text="شروع" textFill="WHITE" />
+                  <JFXTextField fx:id="webAddress" focusColor="#50ab72" labelFloat="true" layoutX="14.0" layoutY="20.0" prefHeight="25.0" prefWidth="165.0" promptText="آدرس" unFocusColor="#509bab" />
+                  <JFXComboBox fx:id="times" focusColor="#50ab72" labelFloat="true" layoutX="17.0" layoutY="74.0" prefHeight="25.0" prefWidth="58.0" promptText="تعداد" unFocusColor="#509bab" />
+                  <JFXProgressBar fx:id="progressBar" layoutX="13.0" layoutY="193.0" prefHeight="5.0" prefWidth="165.0" progress="0.0" />
+                  <JFXButton fx:id="exButton" buttonType="RAISED" disable="true" layoutX="12.0" layoutY="131.0" onAction="#setExButtonClicked" prefHeight="25.0" prefWidth="165.0" ripplerFill="#afe5f0" style="-fx-background-color: #509BAB; -fx-border-radius: 4px;" text="خروجی" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+            <JFXListView fx:id="listView" layoutX="214.0" layoutY="5.0" prefHeight="206.0" prefWidth="263.0" />
+            <Label fx:id="message" alignment="CENTER" layoutX="214.0" layoutY="215.0" prefHeight="32.0" prefWidth="263.0" style="-fx-background-color: white; -fx-border-radius: 4px; -fx-border-color: #d0d0d0;" textFill="#098a00" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
